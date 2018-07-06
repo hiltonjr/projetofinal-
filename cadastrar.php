@@ -2,7 +2,8 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$db = "Brainlist";
+$db = "brainlist";
+$tabela = "usuario";
 
 
 // Create connection
@@ -24,8 +25,9 @@ if ($conn->query($sql) === TRUE) {
     echo 'Cadastro realizado com sucesso<br/>';
     echo 'Retornando ao login';
     echo '<meta http-equiv="refresh" content="5;URL=index.html" />';
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+}else {
+    echo "Error: ja existi ";
+    echo '<meta http-equiv="refresh" content="5;URL=cadastro.html" />';
 }
 
 $conn->close();
