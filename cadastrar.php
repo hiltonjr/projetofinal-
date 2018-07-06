@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$db = "loja";
+$db = "Brainlist";
 
 
 // Create connection
